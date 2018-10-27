@@ -3,3 +3,47 @@
 h1{
   font-family: 'Diplomata', cursive;
 }
+h1.typing{
+  font-size:72px;
+}
+.typing{
+  overflow:hidden;
+  white-space:nowrap;
+  width:10.5em;
+  animation: type 4s steps(30), blink 1s linear infinite; 
+  margin-left:30%;padding:0;
+  border-right: .1em solid;
+  /* text-align:center; */
+}
+
+@keyframes type{
+  from{width:0}
+}
+@keyframes blink{
+  0%,100%{border-color:transparent}
+  50%{border-color:green}
+}
+@media only screen and (max-width:991px) and (min-width:768px){
+  h1.typing{
+    font-size:40px;
+  }
+  .typing{
+    margin-left:20%;
+  }
+}
+@media only screen and (max-width:768px) and (min-width:480px) {
+  h1.typing{
+    font-size:30%px;
+  }
+  .typing{
+    margin-left:18%;
+  }
+}
+@media only screen and (max-width:480px) {
+  h1.typing{
+    font-size:15px;
+  }
+  .typing{
+    margin-left:10%;
+  }
+}
