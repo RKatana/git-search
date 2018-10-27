@@ -1,2 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap3/dist/css/bootstrap.css"
+@import "~bootstrap3/dist/css/bootstrap.css";
+h1{
+  font-family: 'Diplomata', cursive;
+}
