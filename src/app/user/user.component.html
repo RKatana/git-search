@@ -1,11 +1,23 @@
-<h2>Github User profile:</h2><hr>
-<div class=form-group>
-  <label for="search">Search Github</label>
-  <input class='form-control' type="search">
+<div class="container">
+  <div class="row">
+      <h2 class='text-center'>Github User profile:</h2><hr>
+      <div class="col-md-6">
+        <div class=form-group>
+          <label for="search">Search Github</label>
+          <input class='form-control' type="search" placeholder='Enter github user name' required>
+        </div>
+        <button class='btn btn-info' value='Search'><span><img src="../../assets/img.png" alt=""></span> Search</button>
+      </div><br> <br>
+      <!-- <div class="clearfix"></div>
+      <div class="clearfix"></div> -->
+      <div class="col col-md-6 shadow">
+        <h3>Username: <span class='text-success'> {{User.login}} </span> </h3>
+        <!-- <h3>: <span> {{User.html_url}} </span> </h3> -->
+        <h3>Followers: <span class='text-success'> {{User.followers}} </span> </h3>
+        <h3>Following: <span class='text-success'> {{User.following}} </span> </h3>
+        <h3>Repositories: <span class='text-success'> {{User.public_repos}} </span> </h3>
+        <button class='btn btn btn-primary'>View Repositories</button>
+      </div>
+        
+  </div>
 </div>
-  <h3>Username: <span> {{User.login}} </span> </h3>
-  <!-- <h3>: <span> {{User.html_url}} </span> </h3> -->
-  <h3>Followers: <span> {{User.followers}} </span> </h3>
-  <h3>Following: <span> {{User.following}} </span> </h3>
-  <h3>Repositories: <span> {{User.public_repos}} </span> </h3>
-<p>{{repos_url}} </p>
