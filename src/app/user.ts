@@ -8,7 +8,8 @@ export class User {
     public html_url:string,
     public followers:number,
     public following:number,
-    public public_repos:number
+    public public_repos:number,
+    public avatar_url:any
     ){
     // this.User='https://api.github.com/users/RKatana?access_token' +environment.apiKey
 
