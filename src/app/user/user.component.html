@@ -4,9 +4,9 @@
       <div class="col-md-6">
         <div class=form-group>
           <label for="search">Search Github</label>
-          <input class='form-control' type="search" placeholder='Enter github user name' required>
+          <input id='userName' name='userName' class='form-control' type="search" placeholder='Enter github user name' required>
         </div>
-        <button class='btn btn-info' value='Search'><span><img src="../../assets/img.png" alt=""></span> Search</button>
+        <button (click)='search($event)' class='btn btn-info' value='Search'><span><img src="../../assets/img.png" alt=""></span> Search</button>
       </div><br> <br>
       <!-- <div class="clearfix"></div>
       <div class="clearfix"></div> -->

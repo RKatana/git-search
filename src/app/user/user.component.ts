@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { User } from '../user';
+import { environment } from '../../environments/environment'
 
 @Component({
   selector: 'app-user',
@@ -8,10 +9,10 @@ import { User } from '../user';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  User:User;
+  User:any;
 
-  constructor(private http:HttpClient) { }
-
+  constructor(private http:HttpClient,) { }
+  
   ngOnInit() {
     interface userInfo{
       User:any,
@@ -23,10 +24,14 @@ export class UserComponent implements OnInit {
       }
 
     
-    this.http.get<userInfo>('https://api.github.com/users/RKatana?access_token=d3b98b4ec0a789bd55102db2685a440ffe5ba6f0').subscribe(data=>{ 
+    this.http.get<userInfo>('https://api.github.com/users/RKatana?' + environment.apiKey ).subscribe(data=>{ 
       this.User=new User(data.User,data.login,data.html_url,data.followers,data.following,data.public_repos)
     })
     
+  }
+  search(event){
+    let user =new User ('','','',0,0,0)
+    return this.User
   }
 
 }

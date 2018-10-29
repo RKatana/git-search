@@ -1,0 +1,16 @@
+/* input[type='search'] {
+  background-image: url(../../assets/img.png);
+  background-position: 0px 6px;
+  background-repeat: no-repeat;
+} */
+.shadow{
+  border:3px solid black;
+  border-radius:10px;
+  box-shadow: 5px -5px 5px grey;
+  padding-left:20px;
+
+}
+
+.shadow:hover{
+  box-shadow: -5px -5px 5px grey;
+}
