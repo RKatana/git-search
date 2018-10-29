@@ -11,7 +11,7 @@ h1.typing{
   white-space:nowrap;
   width:10.5em;
   animation: type 4s steps(30), blink 1s linear infinite; 
-  margin-left:30%;padding:0;
+  margin-left:28%;padding:0;
   border-right: .1em solid;
   /* text-align:center; */
 }
@@ -31,19 +31,26 @@ h1.typing{
     margin-left:20%;
   }
 }
-@media only screen and (max-width:768px) and (min-width:480px) {
+@media only screen and (max-width:767px) and (min-width:481px) {
   h1.typing{
-    font-size:30%px;
+    font-size:30px;
+  }
+  .col-md-6{
+    margin:0px 40px 0px 40px;
+    
   }
   .typing{
-    margin-left:18%;
+    margin-left:22%;
   }
 }
 @media only screen and (max-width:480px) {
   h1.typing{
-    font-size:15px;
+    font-size:20px;
   }
   .typing{
-    margin-left:10%;
+    margin-left:20%;
+  }
+  .col-md-6{
+    margin:0px 20px 0px 20px
   }
 }
